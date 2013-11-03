@@ -1,7 +1,12 @@
 doctype 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    head
+        title= title
+        script(type="application/javascript", href='/javascripts/vendor/angular/angular.min.js')
+        script(type="application/javascript", href='/javascripts/vendor/angular/mobile-nav.min.js')
+        script(type="application/javascript", src='/javascripts/app/pihome.js')
+        script(type="application/javascript", src='/javascripts/app/controllers.js')
+        script(type="application/javascript", src='/javascripts/app/directives.js')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+body
     block content
